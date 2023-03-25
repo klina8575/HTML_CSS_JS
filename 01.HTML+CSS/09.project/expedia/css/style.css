@@ -17,6 +17,8 @@ ul {
     min-width: 1200px;
 }
 
+/* 헤더 */
+
 header {
     height: 75px; 
     position: relative;
@@ -54,11 +56,51 @@ nav {
     padding: 0 10px;
 }
 
+/* 메인 */
+
 main {
     width: 1200px;
     margin: 0 auto;
     overflow: hidden;
 }
+
+.main-section {
+    margin: 30px 0;
+}
+
+.main__top {
+    height: 260px;
+}
+
+.main__sso {
+    height: 60px;
+}
+
+.main__banner1 {
+    height: 500px;
+}
+
+.main__banner2 {
+    height: 260px;
+}
+
+.main__travel-helper {
+    height: 140px;
+}
+
+.main__banner3 {
+    height: 190px;
+}
+
+.main__early-reservation {
+    height: 310px;
+}
+
+.main__more {
+    height: 60px;
+}
+
+/* 푸터 */
 
 footer {
     height: 600px;
