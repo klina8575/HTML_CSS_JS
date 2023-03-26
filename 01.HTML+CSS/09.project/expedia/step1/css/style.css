@@ -78,27 +78,7 @@ main {
 }
 
 .main__sso {
-    /* height: 60px; */
-}
-
-.sso__content {
-    background-color: #343b53;
-    color: white;
     height: 60px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.sso__content > p:nth-child(1) { 
-    width: 80px;
-    text-align: center;
-}
-.sso__content > p:nth-child(2) { width: 1120px;}
-
-.sso__content > p:nth-child(2) > a { 
-    color: white;
-    text-decoration: underline;
 }
 
 .main__banner1 {
