@@ -3,19 +3,23 @@
 body {
     margin: 0;
     padding: 0;
-    font-size: 0.9em;
+    font-size: 0.9em !important;
   }
   
 ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 a {
-    color: black;
-    text-decoration: none;
+    color: black !important;
+    text-decoration: none !important;
     cursor: pointer;
+}
+
+p {
+    margin: 0 !important;
 }
   
 .wrap {
@@ -40,7 +44,7 @@ nav {
 }
 
 nav a:hover {
-    color: rgb(36, 36, 206);
+    color: rgb(36, 36, 206) !important;
 }
 
 .nav__logo {
@@ -53,6 +57,19 @@ nav a:hover {
     display: flex;
     align-items: center;
     padding-left: 20px;
+}
+
+.nav__top-button > .dropdown-menu {
+    width: 400px;
+}
+
+.nav__top-button > .dropdown-menu > li {
+    padding: 5px 5px;
+}
+
+
+.nav__top-button > .dropdown-menu a {
+    font-size: 0.9rem !important;
 }
 
 .nav__menu {
@@ -76,11 +93,39 @@ main {
 }
 
 .main-section {
-    margin: 30px 0;
+    margin: 40px 0;
 }
 
 .main__top {
     height: 260px;
+}
+
+.tab-pane__sub {
+    width: 1100px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.tab-pane__sub > div {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-main {
+    background: transparent;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: left;
+    margin: 15px 5px;
+    font-size: 15px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-main > div {
+    padding: 0 10px;
 }
 
 .main__sso {
@@ -100,7 +145,9 @@ main {
     width: 80px;
     text-align: center;
 }
-.sso__content > p:nth-child(2) { width: 1120px;}
+.sso__content > p:nth-child(2) { 
+    width: 1120px;
+}
 
 .sso__content > p:nth-child(2) > a { 
     color: white;
@@ -123,12 +170,12 @@ main {
 }
 
 .banner1__content > div:nth-child(1) {
-    width: 400px;
+    width: 500px;
     padding: 70px 40px;
 }
 
 .banner1__content > div:nth-child(2) {
-    width: 800px;
+    width: 700px;
 }
 
 .main__banner2 {
@@ -269,11 +316,11 @@ main {
 }
 
 .main__more a {
-    color: rgb(36, 36, 206);
+    color: rgb(36, 36, 206) !important;
 }
 
 .main__more a:hover {
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 
 /* 푸터 */
@@ -309,7 +356,7 @@ footer {
 }
 
 .sitemap > li > ul > li > a {
-    color: rgb(36, 36, 206);
+    color: rgb(36, 36, 206) !important;
     font-size: 12px;
 }
 
@@ -334,4 +381,24 @@ footer {
 
 .support:hover {
     background-color: rgb(226, 247, 255);
+}
+
+/* 모달 */
+
+.modal-body {
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.modal-body > h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.modal-body > ul a {
+    color: rgb(36, 36, 206) !important;
+}
+
+.modal-body > ul a:hover {
+    text-decoration: underline !important;
 }

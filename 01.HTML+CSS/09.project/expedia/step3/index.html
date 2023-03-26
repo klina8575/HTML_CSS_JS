@@ -4,20 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>익스피디아 여행</title>
+    <title>익스피디아 여행: 휴가용 주택 임대, 호텔, 렌터카, 항공편 등</title>
+
+    <!-- 파비콘 -->
+    <!-- https://www.favicon-generator.org/ -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/css/fontawesome.css">
     <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/css/brands.css">
     <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/css/solid.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 </head>
-<body>
+<body>  
     <div class="wrap">
         <header>
             <nav class="nav">
                 <a href="./index.html" class="nav__logo">
                     <img src="./images/logo.svg" width="126">
                 </a>
-                <div class="nav__top-button"><a href="#">여행 더 검색&nbsp;&nbsp;<i style="font-size: 10px;" class="fa-solid fa-chevron-down"></i></a></div>
+                <div class="nav__top-button dropdown">
+                    <!-- <a href="#">여행 더 검색&nbsp;&nbsp;<i style="font-size: 10px;" class="fa-solid fa-chevron-down"></i></a> -->
+                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        여행 더 검색
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-hotel"></i> 숙소</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-plane"></i> 항공</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-car"></i> 렌터카</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-suitcase-rolling"></i> 항공 + 숙소</a></li>
+                        <li><a class="dropdown-item" href="#">추천 프로모션</a></li>
+                        <li><a class="dropdown-item" href="#">모바일</a></li>
+                        <li><a class="dropdown-item" href="#">트래블 블로그</a></li>
+                        <li><a class="dropdown-item" href="#">단체 및 회의</a></li>
+                    </ul>
+                </div>
                 <ul class="nav__menu">
                     <li><a href="#"><i class="fa-solid fa-globe"></i>&nbsp;&nbsp;한국어</a></li>
                     <li><a href="#">숙박 시설 등록하기</a></li>
@@ -29,14 +68,76 @@
             </nav>
         </header>
         <main class="main">
-            <section class="main__top main-section">1</section>
+            <section class="main__top main-section">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">숙소</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">항공</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">렌터카</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">항공+숙소</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                        <div class="tab-pane__sub">
+                            <div>
+                                <button type="button" class="btn-main" style="width: 530px; margin-left: 0;">
+                                    <div><i class="fa-solid fa-location-dot"></i></div>
+                                    <div>목적지</div>
+                                </button>
+                                <button type="button" class="btn-main" style="width: 190px;">
+                                    <div>
+                                        <i class="fa-solid fa-calendar-day"></i> 
+                                    </div>
+                                    <ul>
+                                        <li style="font-size: 10px;">체크인 날짜</li>
+                                        <li>4월 13일</li>
+                                    </ul>
+                                </button>
+                                <button type="button" class="btn-main" style="width: 190px;">
+                                    <div>
+                                        <i class="fa-solid fa-calendar-day"></i>
+                                    </div>
+                                    <ul>
+                                        <li style="font-size: 10px;">체크아웃 날짜</li>
+                                        <li>5월 27일</li>
+                                    </ul>
+                                </button>
+                                <button type="button" class="btn-main" style="width: 290px; margin-right: 0;">
+                                    <div>
+                                        <i class="fa-solid fa-user"></i>
+                                    </div>
+                                    <ul>
+                                        <li style="font-size: 10px;">인원수</li>
+                                        <li>객실 1개, 2명</li>
+                                    </ul>
+                                </button>
+                            </div>
+                            <label><input type="checkbox" name="plane" id="plane" class="plane" value="plane"> 항공 추가</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label><input type="checkbox" name="rentcar" id="rentcar" class="rentcar" value="rentcar"> 렌터카 추가</label>
+                            <div style="margin-top: 20px;">
+                                <button type="button" class="btn btn-primary" style="width: 180px; height: 45px;">검색</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
+                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
+                    <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
+                </div>
+            </section>
             <section class="main__sso main-section">
                 <div class="sso__content">
                     <p><i class="fa-solid fa-triangle-exclamation"></i></p>
                     <p>
                         2023년, 더 많은 여행을 편리하게 즐겨보세요! 이제 곧 익스피디아, 호텔스닷컴 및 Vrbo에서 하나의 계정을 사용해 로그인하고 예약하실 수 있습니다.
                         <br>
-                        <a href="#">자세히 알아보기</a>
+                        <a href="#"><span style="color: white; text-decoration: underline;">자세히 알아보기</span></a>
                     </p>
                 </div>
             </section>
@@ -45,7 +146,8 @@
                     <div>
                         <p style="font-size: 40px;">익스피디아 리워드로 즉시 할인</p>
                         <p style="font-size: 17px;">수천 개 호텔에서 평균 15% 할인되는 회원가 등의 특전을 누리실 수 있어요. 이용약관이 적용될 수 있습니다.</p>
-                        <button type="button">회원가 보기</button>
+                        <br>
+                        <button type="button" class="btn btn-primary">회원가 보기</button>
                     </div>
                     <div></div>
                 </div>
@@ -104,9 +206,9 @@
                 <h2>지금 할인받고 떠나세요!</h2>
                 <div>
                     <a href="#" class="early-reservation1">
-                        <div style="font-size: 20px;">조기 예약 할인</div>
+                        <div style="font-size: 20px; color: white;">조기 예약 할인</div>
                         <br>
-                        <div style="font-size: 17px;">60일 미리 예약하면 엄선된 호텔 20% 할인!</div>
+                        <div style="font-size: 17px; color: white;">60일 미리 예약하면 엄선된 호텔 20% 할인!</div>
                         <br>
                     </a>
                     <a href="#" class="early-reservation2">
@@ -118,7 +220,7 @@
                 <div>
                     <span>익스피디아와 떠나는 세계 여행</span>
                     <br>
-                    <span><a href="#">여행 옵션 보기</a></span>
+                    <span><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">여행 옵션 보기</a></span>
                 </div>
             </section>
         </main>
@@ -137,7 +239,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">회사</a>
+                            <a href="#">검색</a>
                             <ul>
                                 <li><a href="#">국내 여행지</a></li>
                                 <li><a href="#">국내 호텔</a></li>
@@ -150,14 +252,14 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">회사</a>
+                            <a href="#">정책</a>
                             <ul>
                                 <li><a href="#">개인정보 처리방침</a></li>
                                 <li><a href="#">이용약관</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="#">회사</a>
+                            <a href="#">지원</a>
                             <ul>
                                 <li><a href="#">지원</a></li>
                                 <li><a href="#">예약을 변경 또는 취소</a></li>
@@ -181,6 +283,37 @@
             </div>
         </footer>
     </div>
+    <!-- 지원 버튼 -->
     <a class="support"><i class="fa-solid fa-comments"></i>지원</a>
+    <!-- Modal 버튼 -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">새로운 장소, 새로운 경험</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h3>국내 여행지 호텔 특가</h3>
+                <ul>
+                    <li><a href="#">강릉 호텔</a></li>
+                    <li><a href="#">속초 호텔</a></li>
+                    <li><a href="#">서울 호텔</a></li>
+                    <li><a href="#">경주 호텔</a></li>
+                    <li><a href="#">인천 호텔</a></li>
+                </ul>
+                <br>
+                <h3>해외 호텔 예약</h3>
+                <ul>
+                    <li><a href="#">오사카 호텔</a></li>
+                    <li><a href="#">다낭 호텔</a></li>
+                    <li><a href="#">도쿄 호텔</a></li>
+                    <li><a href="#">후쿠오카 호텔</a></li>
+                    <li><a href="#">상하이 호텔</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </div>
 </body>
 </html>
