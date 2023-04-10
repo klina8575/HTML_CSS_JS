@@ -148,7 +148,7 @@
     }
 
 
-    var cityList = ["seoul", "incheon", "busan", "daegu", "daejeon", "jeju"];
+    var cityList = ["seoul", "incheon", "busan", "daegu", "daejeon", "jeju", "gangneung", "bucheon", "gimhae", "gyeongju", "iksan", "yeosu"];
 
     for(const city of cityList) {
         let temp = getWeatherWithCity(city);
